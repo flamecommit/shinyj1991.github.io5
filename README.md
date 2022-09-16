@@ -1,3 +1,8 @@
+## Live URL
+
+simplizm.xyz
+
+
 ## Node version
 
 16.11.0
