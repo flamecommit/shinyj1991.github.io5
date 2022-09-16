@@ -1,9 +1,17 @@
-const HomePage = () => {
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  h1 {
+    color: red;
+  }
+`
+
+const PageHome = () => {
   return (
-    <div>
+    <Wrapper>
       <h1>Home</h1>
-    </div>
+    </Wrapper>
   )
 }
 
-export default HomePage
+export default PageHome
