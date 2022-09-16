@@ -1,7 +1,9 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom"
 
 import GlobalStyles from "../components/GlobalStyles"
+
+import TheHeader from "../components/The/Header"
+import TheFooter from "../components/The/Footer"
 
 const Wrapper = styled.div`
   main {
@@ -14,19 +16,13 @@ const LayoutDefault = ({ children }) => {
     <>
       <GlobalStyles />
       <Wrapper>
-        <header>
-          <h1>Header</h1>
-          <Link to="/">home</Link>
-          <Link to="/about">about</Link>
-        </header>
+        <TheHeader />
 
         <main>
           {children}
         </main>
 
-        <footer>
-          <p>Footer</p>
-        </footer>
+        <TheFooter />
       </Wrapper>
     </>
   )
