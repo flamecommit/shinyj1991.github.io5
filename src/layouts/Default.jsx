@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom"
 
+import GlobalStyles from "../components/GlobalStyles"
+
 const Wrapper = styled.div`
   main {
     padding: 50px;
@@ -9,21 +11,24 @@ const Wrapper = styled.div`
 
 const LayoutDefault = ({ children }) => {
   return (
-    <Wrapper>
-      <header>
-        <h1>Header</h1>
-        <Link to="/">home</Link>
-        <Link to="/about">about</Link>
-      </header>
+    <>
+      <GlobalStyles />
+      <Wrapper>
+        <header>
+          <h1>Header</h1>
+          <Link to="/">home</Link>
+          <Link to="/about">about</Link>
+        </header>
 
-      <main>
-        {children}
-      </main>
+        <main>
+          {children}
+        </main>
 
-      <footer>
-        <p>Footer</p>
-      </footer>
-    </Wrapper>
+        <footer>
+          <p>Footer</p>
+        </footer>
+      </Wrapper>
+    </>
   )
 }
 
