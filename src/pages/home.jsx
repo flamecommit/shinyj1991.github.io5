@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react"
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 import { parseMarkdown } from "../utils/markdown";
 
-const Wrapper = styled.div`
-  h1 {
-    color: red;
-  }
-`
+const Wrapper = styled.div``
 
 const importAll = (r) => r.keys().map(r);
 const markdownFiles = importAll(require.context('../content', false, /\.md$/))
@@ -18,13 +15,22 @@ const PageHome = () => {
 
   useEffect(() => {
     async function fetchPosts() {
+      const filenames = [];
       const posts = await Promise.all(markdownFiles
-        .map((file) => fetch(file)
-          .then((res) => res.text())
-        )
-      );
+        .map((file) => fetch(file).then((res) => {
+          const p = file.split('/')
+          filenames.push(p[p.length - 1].split('.')[0]);
 
-      setPosts(parseMarkdown(posts));
+          return res.text()
+        })
+      ));
+
+      const result = posts.map((post, index) => ({
+        filename: filenames[index],
+        ...parseMarkdown(post)
+      }))
+
+      setPosts(result);
     }
 
     fetchPosts();
@@ -38,12 +44,17 @@ const PageHome = () => {
       <h1>Home</h1>
       {
         posts.map((post, idx) =>
-          <div key={idx}>
-            {post.headers.title}
+          <Link to={`/post/${post.filename}`} key={idx}>
+            <div>
+              {post.filename}
+            </div>
+            <div>
+              {post.headers.title}
+            </div>
             <div>
               {post.headers.createAt.toString()}
             </div>
-          </div>
+          </Link>
         )
       }
     </Wrapper>
