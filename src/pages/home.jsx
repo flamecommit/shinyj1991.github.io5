@@ -6,9 +6,9 @@ import { parseMarkdown } from "../utils/markdown";
 const Wrapper = styled.div``
 
 const importAll = (r) => r.keys().map(r);
-const markdownFiles = importAll(require.context('../content', false, /\.md$/))
-  .sort()
-  .reverse();
+const markdownFiles = importAll(require.context('../content', false, /\.md$/)).sort().reverse();
+
+console.log(markdownFiles)
 
 const PageHome = () => {
   const [posts, setPosts] = useState([])
