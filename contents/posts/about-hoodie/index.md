@@ -6,7 +6,7 @@ update: 2021-05-01
 tags:
   - hoodie
   - about
-series: ""
+series: "Getting started your blog with gatsby-starter-hoodie"
 ---
 
 ## About gatsby-starter-hoodie
