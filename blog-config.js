@@ -1,7 +1,7 @@
 module.exports = {
   title: "SIMPLIZM",
   description: "tech blog",
-  author: "Shinyj1991",
+  author: "shinyj1991",
   siteUrl: "https://simplizm.xyz",
   links: {
     github: "https://github.com/shinyj1991",
