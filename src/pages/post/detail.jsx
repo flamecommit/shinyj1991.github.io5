@@ -11,7 +11,6 @@ const PagePostDetail = () => {
 
   useEffect(() => {
     async function fetchPost() {
-
       const post = await fetch(markdownFile).then((res) => res.text())
 
       setPost(parseMarkdown(post));
@@ -19,7 +18,7 @@ const PagePostDetail = () => {
 
     fetchPost();
 
-  }, [])
+  }, [markdownFile])
 
   return (
     <div>
