@@ -1,5 +1,5 @@
 module.exports = {
-  title: "simplizm",
+  title: "SIMPLIZM",
   description: "tech blog",
   author: "Shinyj1991",
   siteUrl: "https://simplizm.xyz",

@@ -1,5 +1,5 @@
 ---
-title: "🤩 4. Other Tips"
+title: "한글도 되나요"
 description:
 date: 2021-05-04
 update: 2021-05-04
