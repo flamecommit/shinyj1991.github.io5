@@ -15,7 +15,6 @@ import { SiNotion } from "react-icons/si"
 import { siteUrl, description, author, links } from "../../../blog-config"
 
 const BioWrapper = styled.div`
-  padding-top: 48px;
   display: flex;
   align-items: center;
 

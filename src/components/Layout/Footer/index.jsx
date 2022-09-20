@@ -4,10 +4,16 @@ import styled from "styled-components"
 import { title } from "../../../../blog-config"
 
 const FooterWrapper = styled.footer`
-  margin-top: 32px;
-  padding: 40px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid ${props => props.theme.colors.divider};
-  text-align: center;
   font-size: 11pt;
   font-weight: lighter;
   color: ${props => props.theme.colors.secondaryText};

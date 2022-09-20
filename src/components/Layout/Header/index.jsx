@@ -20,7 +20,6 @@ const HeaderWrapper = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  padding: 16px;
   background-color: ${props => props.theme.colors.headerBackground};
   box-shadow: 0 0 8px ${props => props.theme.colors.headerShadow};
   backdrop-filter: blur(5px);
@@ -33,11 +32,13 @@ const HeaderWrapper = styled.header`
 
 const Inner = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin: 0 64px;
+  height: 56px;
+  padding: 0 30px;
 
   @media (max-width: 768px) {
-    margin: 0 15px;
+    padding: 0 15px;
   }
 `
 

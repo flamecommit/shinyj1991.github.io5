@@ -103,7 +103,7 @@ const Toc = ({ items, articleOffset }) => {
   }, [y])
 
   const handleClickTitle = index => {
-    animateScroll.scrollTo(headers[index] - 78)
+    animateScroll.scrollTo(headers[index] - 66)
   }
 
   return (
