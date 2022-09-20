@@ -1,6 +1,6 @@
 module.exports = {
   title: "SIMPLIZM",
-  description: "tech blog",
+  description: "간소한 블로그.",
   author: "shinyj1991",
   siteUrl: "https://simplizm.xyz",
   links: {
