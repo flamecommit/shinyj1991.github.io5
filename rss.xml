@@ -1,29 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://simplizm.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 Sep 2022 05:43:48 GMT</lastBuildDate><item><title><![CDATA[ttt]]></title><description><![CDATA[test]]></description><link>https://simplizm.xyz/포스트2/</link><guid isPermaLink="false">https://simplizm.xyz/포스트2/</guid><pubDate>Fri, 09 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;test&lt;/p&gt;</content:encoded></item><item><title><![CDATA[한글 포스트 1]]></title><description><![CDATA[제목 1 본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문 제목 1-…]]></description><link>https://simplizm.xyz/한글-테스트-입니다/</link><guid isPermaLink="false">https://simplizm.xyz/한글-테스트-입니다/</guid><pubDate>Thu, 08 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;제목 1&lt;/h2&gt;
-&lt;p&gt;본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문&lt;/p&gt;
-&lt;h3&gt;제목 1-1&lt;/h3&gt;
-&lt;p&gt;본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문&lt;/p&gt;
-&lt;h3&gt;제목 1-2&lt;/h3&gt;
-&lt;p&gt;본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문&lt;/p&gt;
-&lt;h3&gt;제목 1-3&lt;/h3&gt;
-&lt;p&gt;본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문&lt;/p&gt;
-&lt;h2&gt;제목 2&lt;/h2&gt;
-&lt;p&gt;본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문&lt;/p&gt;
-&lt;h3&gt;제목 2-1&lt;/h3&gt;
-&lt;p&gt;본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문&lt;/p&gt;
-&lt;p&gt;&lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 16px;&apos;&gt;
-      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
-    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 18.823529411764707%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB36AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hj//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABPxABf//Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;tag example&apos; title=&apos;tag example&apos; src=&apos;/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg&apos; srcset=&apos;/static/82ce4bec7f5360eef32a473171b181af/0b705/tag-example.jpg 170w,
-/static/82ce4bec7f5360eef32a473171b181af/31389/tag-example.jpg 340w,
-/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg 680w,
-/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg 737w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;데모 파일 입니다 &lt;a href=&quot;/demo/test&quot;&gt;demo 바로가기&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://simplizm.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 Sep 2022 08:18:22 GMT</lastBuildDate><item><title><![CDATA[첫 글]]></title><description><![CDATA[인사말 작성하던 기술블로그를 방치한지 어언 1년.
+구글링을 하다가 우연히 맘에 쏙드는 블로그 템플릿을 발견하게 되어
+다시금 블로그를 개설하게 되었습니다. 멋진 템플릿 만들어주신 후디 님께 감사 인사 드립니다.]]></description><link>https://simplizm.xyz/첫 글/</link><guid isPermaLink="false">https://simplizm.xyz/첫 글/</guid><pubDate>Tue, 20 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;인사말&lt;/h2&gt;
+&lt;p&gt;작성하던 기술블로그를 방치한지 어언 1년.&lt;br&gt;
+구글링을 하다가 우연히 맘에 쏙드는 블로그 템플릿을 발견하게 되어&lt;br&gt;
+다시금 블로그를 개설하게 되었습니다.&lt;/p&gt;
+&lt;p&gt;멋진 템플릿 만들어주신 &lt;a href=&quot;https://github.com/devHudi&quot; target=&quot;_blank&quot;&gt;후디&lt;/a&gt; 님께 감사 인사 드립니다.&lt;/p&gt;
+&lt;!-- ![](tag-example.jpg) --&gt;</content:encoded></item></channel></rss>
