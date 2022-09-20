@@ -18,19 +18,22 @@ const FooterWrapper = styled.footer`
   font-weight: lighter;
   color: ${props => props.theme.colors.secondaryText};
 
-  & > a {
+  a {
     color: ${props => props.theme.colors.text};
+    text-decoration: none;
   }
 `
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      © {title}, Built with Gatsby and{" "}
-      <a href="https://github.com/devHudi/gatsby-starter-hoodie" target="blank">
-        gatsby-starter-hoodie
-      </a>{" "}
-      theme.
+      <div className="inner">
+        © {title}, Built with Gatsby and{" "}
+        <a href="https://github.com/devHudi/gatsby-starter-hoodie" target="blank">
+          gatsby-starter-hoodie
+        </a>{" "}
+        theme.
+      </div>
     </FooterWrapper>
   )
 }
