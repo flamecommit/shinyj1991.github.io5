@@ -45,7 +45,7 @@ const BlogTitle = styled.span`
   font-family: "roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: ${props => props.theme.colors.text};
+  color: ${props => props.theme.colors.title};
 
   & > a {
     text-decoration: none;
