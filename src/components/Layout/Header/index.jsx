@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import styled, { useTheme } from "styled-components"
 
 import { Link } from "gatsby"
@@ -17,15 +17,13 @@ import {
 const HeaderWrapper = styled.header`
   display: block;
   position: fixed;
-  top: ${props => (props.isHidden ? -60 : 0)}px;
+  top: 0;
   left: 0;
   right: 0;
   padding: 16px;
   background-color: ${props => props.theme.colors.headerBackground};
   box-shadow: 0 0 8px ${props => props.theme.colors.headerShadow};
   backdrop-filter: blur(5px);
-  opacity: ${props => (props.isHidden ? 0 : 1)};
-  transition: top 0.5s, opacity 0.5s;
   z-index: 999;
 
   @media (max-width: 768px) {
@@ -109,35 +107,9 @@ const IconRail = styled.div`
 
 const Header = ({ toggleTheme }) => {
   const theme = useTheme()
-  const [scrollY, setScrollY] = useState()
-  const [hidden, setHidden] = useState(false)
-
-  const detectScrollDirection = () => {
-    if (scrollY >= window.scrollY) {
-      // scroll up
-      setHidden(false)
-    } else if (scrollY < window.scrollY && 400 <= window.scrollY) {
-      // scroll down
-      setHidden(true)
-    }
-
-    setScrollY(window.scrollY)
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", detectScrollDirection)
-
-    return () => {
-      window.removeEventListener("scroll", detectScrollDirection)
-    }
-  }, [scrollY])
-
-  useEffect(() => {
-    setScrollY(window.scrollY)
-  }, [])
 
   return (
-    <HeaderWrapper isHidden={hidden}>
+    <HeaderWrapper>
       <Inner>
         <BlogTitle>
           <Link to="/">{title}</Link>

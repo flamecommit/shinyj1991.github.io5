@@ -9,7 +9,7 @@ import getElementOffset from "utils/getElmentOffset"
 
 import RevealOnScroll from "components/RevealOnScroll"
 
-const STICK_OFFSET = 100
+const STICK_OFFSET = 78
 
 const TocWrapper = styled.div`
   position: absolute;
@@ -103,7 +103,7 @@ const Toc = ({ items, articleOffset }) => {
   }, [y])
 
   const handleClickTitle = index => {
-    animateScroll.scrollTo(headers[index] - 100)
+    animateScroll.scrollTo(headers[index] - 78)
   }
 
   return (

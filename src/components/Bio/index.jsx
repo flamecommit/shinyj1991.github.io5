@@ -14,11 +14,12 @@ import {
 import { siteUrl, description, author, links } from "../../../blog-config"
 
 const BioWrapper = styled.div`
+  padding-top: 48px;
   display: flex;
   align-items: center;
 
   @media (max-width: 768px) {
-    padding: 0 15px;
+    padding: 48px 15px 0;
   }
 `
 
@@ -33,7 +34,7 @@ const Profile = styled.div`
   width: 128px;
   height: 128px;
   border-radius: 999px;
-  background-image: url(${profileImageRoot}/profile.png);
+  background-image: url(${profileImageRoot}/profile.jpg);
   background-size: cover;
   background-position: center;
 `
