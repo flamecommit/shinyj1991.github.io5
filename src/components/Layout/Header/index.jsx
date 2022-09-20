@@ -38,10 +38,10 @@ const Inner = styled.div`
   }
 `
 
-const BlogTitle = styled.span`
+const BlogTitle = styled.div`
   font-family: "roboto", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   color: ${props => props.theme.colors.title};
 
   & > a {

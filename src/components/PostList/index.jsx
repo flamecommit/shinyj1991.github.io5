@@ -33,9 +33,15 @@ const Date = styled.p`
 const Excerpt = styled.p`
   margin-bottom: 32px;
   line-height: 1.7;
+  max-height: 3.4em;
   font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};
+  overflow: hidden;
+  text-overflow: ellipsis;
   word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 `
 
 const checkIsScrollAtBottom = () => {
