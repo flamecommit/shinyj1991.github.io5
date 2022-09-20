@@ -10,6 +10,7 @@ import {
   FaLink,
   FaEnvelope,
 } from "react-icons/fa"
+import { SiNotion } from "react-icons/si"
 
 import { siteUrl, description, author, links } from "../../../blog-config"
 
@@ -84,7 +85,7 @@ const Link = ({ link, children }) => {
 }
 
 const Bio = () => {
-  const { github, kaggle, instagram, facebook, linkedIn, email, etc } = links
+  const { github, kaggle, instagram, facebook, linkedIn, email, etc, notion } = links
 
   return (
     <BioWrapper id="bio">
@@ -95,6 +96,9 @@ const Bio = () => {
         <LinksWrapper>
           <Link link={github}>
             <FaGithub />
+          </Link>
+          <Link link={notion}>
+            <SiNotion />
           </Link>
           <Link link={kaggle}>
             <FaKaggle />

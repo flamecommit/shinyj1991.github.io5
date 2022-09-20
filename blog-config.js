@@ -9,6 +9,7 @@ module.exports = {
     // facebook: "https://www.facebook.com",
     // instagram: "https://www.instagram.com",
     email: "mailto:shinyj1991@gmail.com",
+    notion: "https://simplizm.notion.site/Simple-is-the-best-ab5993b7b6a9403088848359cd1f0b48",
   },
   utterances: {
     repo: "shinyj1991/simplizm",
