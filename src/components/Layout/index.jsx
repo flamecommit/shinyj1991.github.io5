@@ -16,12 +16,16 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   position: relative;
   min-height: 100vh;
-  padding: 56px 0 96px;
+  padding-top: ${props => props.headerHeight}px;
+  padding-bottom: ${props => props.footerHeight}px;
 `
 
 const Layout = ({ children }) => {
   const dispatch = useDispatch()
   const { theme } = useSelector(state => state.theme)
+
+  const headerHeight = 56
+  const footerHeight = 96
 
   let isSystemDarkMode = null
   if (typeof window !== "undefined") {
@@ -47,11 +51,11 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme === "light" ? light : dark}>
-      <Wrapper>
+      <Wrapper headerHeight={headerHeight} footerHeight={footerHeight}>
         <GlobalStyles />
-        <Header toggleTheme={toggleTheme} />
+        <Header height={headerHeight} toggleTheme={toggleTheme} />
         <Body>{children}</Body>
-        <Footer />
+        <Footer height={footerHeight} />
       </Wrapper>
     </ThemeProvider>
   )

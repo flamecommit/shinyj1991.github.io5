@@ -24,17 +24,13 @@ const HeaderWrapper = styled.header`
   box-shadow: 0 0 8px ${props => props.theme.colors.headerShadow};
   backdrop-filter: blur(5px);
   z-index: 999;
-
-  @media (max-width: 768px) {
-    padding: 16px 0;
-  }
 `
 
 const Inner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 56px;
+  height: ${props => props.height}px;
   padding: 0 30px;
 
   @media (max-width: 768px) {
@@ -106,12 +102,12 @@ const IconRail = styled.div`
   }
 `
 
-const Header = ({ toggleTheme }) => {
+const Header = ({ height, toggleTheme }) => {
   const theme = useTheme()
 
   return (
     <HeaderWrapper>
-      <Inner>
+      <Inner height={height}>
         <BlogTitle>
           <Link to="/">{title}</Link>
         </BlogTitle>

@@ -9,7 +9,7 @@ const FooterWrapper = styled.footer`
   bottom: 0;
   left: 0;
   box-sizing: border-box;
-  height: 96px;
+  height: ${props => props.height}px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,19 +19,19 @@ const FooterWrapper = styled.footer`
   color: ${props => props.theme.colors.secondaryText};
 
   a {
+    margin: 0 0.3em;
     color: ${props => props.theme.colors.text};
-    text-decoration: none;
   }
 `
 
-const Footer = () => {
+const Footer = ({ height }) => {
   return (
-    <FooterWrapper>
+    <FooterWrapper height={height}>
       <div className="inner">
-        © {title}, Built with Gatsby and{" "}
+        © {title}, Built with Gatsby and
         <a href="https://github.com/devHudi/gatsby-starter-hoodie" target="blank">
           gatsby-starter-hoodie
-        </a>{" "}
+        </a>
         theme.
       </div>
     </FooterWrapper>

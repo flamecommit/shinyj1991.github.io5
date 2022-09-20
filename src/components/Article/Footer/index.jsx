@@ -185,20 +185,22 @@ const Comment = () => {
 const Footer = ({ previous, next }) => {
   return (
     <>
-      <ArticleButtonContainer>
-        {previous ? (
-          <ArticleButton onClick={() => navigate(previous?.fields?.slug)}>
-            {previous?.frontmatter?.title}
-          </ArticleButton>
-        ) : (
-          <div></div>
-        )}
-        {next && (
-          <ArticleButton right onClick={() => navigate(next?.fields?.slug)}>
-            {next?.frontmatter?.title}
-          </ArticleButton>
-        )}
-      </ArticleButtonContainer>
+      {(previous || next) &&
+        <ArticleButtonContainer>
+          {previous ? (
+            <ArticleButton onClick={() => navigate(previous?.fields?.slug)}>
+              {previous?.frontmatter?.title}
+            </ArticleButton>
+          ) : (
+            <div></div>
+          )}
+          {next && (
+            <ArticleButton right onClick={() => navigate(next?.fields?.slug)}>
+              {next?.frontmatter?.title}
+            </ArticleButton>
+          )}
+        </ArticleButtonContainer>
+      }
       <Bio />
       <CommentWrapper>
         <Divider mt="32px" />
