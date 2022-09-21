@@ -19,14 +19,11 @@ const BioWrapper = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-    padding: 48px 15px 0;
+    padding-inline: 15px;
   }
 `
 
-const profileImageRoot =
-  typeof window !== "undefined" && window.location.host === "localhost:8000"
-    ? "http://localhost:8000"
-    : siteUrl
+const profileImageRoot = typeof window !== "undefined" && window.location.host === "localhost:8000" ? "http://localhost:8000" : siteUrl
 
 const Profile = styled.div`
   flex: 0 0 auto;

@@ -8,7 +8,6 @@ const FooterWrapper = styled.footer`
   right: 0;
   bottom: 0;
   left: 0;
-  box-sizing: border-box;
   height: ${props => props.height}px;
   display: flex;
   align-items: center;

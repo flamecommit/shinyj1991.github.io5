@@ -8,6 +8,15 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Noto Sans KR', sans-serif;
     background: ${props => props.theme.colors.bodyBackground};
   }
+
+  * {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+      box-sizing: border-box;
+    }
+  }
 `
 
 export default GlobalStyles

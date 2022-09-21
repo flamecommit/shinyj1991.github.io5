@@ -7,20 +7,18 @@ import useScroll from "hooks/useScroll"
 
 import getElementOffset from "utils/getElmentOffset"
 
-import RevealOnScroll from "components/RevealOnScroll"
-
-const STICK_OFFSET = 78
-
 const TocWrapper = styled.div`
   position: absolute;
-  opacity: 1;
+  top: 0;
   left: 100%;
+  height: 100%;
 
   & > div {
+    position: sticky;
+    top: 86px;
     padding-right: 20px;
     padding-left: 16px;
     margin-left: 48px;
-    position: relative;
     width: 240px;
     max-height: calc(100% - 185px);
     overflow-y: auto;
@@ -35,13 +33,6 @@ const TocWrapper = styled.div`
     ::-webkit-scrollbar-thumb {
       background: ${props => props.theme.colors.scrollHandle};
     }
-
-    ${props =>
-      props.stick &&
-      css`
-        position: fixed;
-        top: ${STICK_OFFSET}px;
-      `}
   }
 
   @media (max-width: 1300px) {
@@ -70,20 +61,11 @@ const ParagraphTitle = styled.div`
   }
 `
 
-const Toc = ({ items, articleOffset }) => {
+const Toc = ({ items }) => {
   const { y } = useScroll()
 
-  const [revealAt, setRevealAt] = useState(4000)
   const [headers, setHeaders] = useState([])
   const [active, setActive] = useState(0)
-
-  useEffect(() => {
-    const bioElm = document.getElementById("bio")
-
-    setRevealAt(
-      getElementOffset(bioElm).top - bioElm.getBoundingClientRect().height - 400
-    )
-  }, [])
 
   useEffect(() => {
     setHeaders(
@@ -107,22 +89,20 @@ const Toc = ({ items, articleOffset }) => {
   }
 
   return (
-    <RevealOnScroll revealAt={revealAt} reverse>
-      <TocWrapper stick={y > articleOffset - STICK_OFFSET}>
-        <div>
-          {items.map((item, i) => (
-            <ParagraphTitle
-              key={i}
-              subtitle={item.tagName === "H3"}
-              active={i === active}
-              onClick={() => handleClickTitle(i)}
-            >
-              {item.innerText}
-            </ParagraphTitle>
-          ))}
-        </div>
-      </TocWrapper>
-    </RevealOnScroll>
+    <TocWrapper>
+      <div>
+        {items.map((item, i) => (
+          <ParagraphTitle
+            key={i}
+            subtitle={item.tagName === "H3"}
+            active={i === active}
+            onClick={() => handleClickTitle(i)}
+          >
+            {item.innerText}
+          </ParagraphTitle>
+        ))}
+      </div>
+    </TocWrapper>
   )
 }
 
