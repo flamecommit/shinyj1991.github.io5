@@ -9,7 +9,7 @@ const GRAY2 = "#e9ecef"
 const GRAY1 = "#f1f3f5"
 const GRAY0 = "#f8f9fa"
 
-const GREEN1 = '#5c913b'
+const GREEN1 = '#71ac42'
 
 const WHITE = '#ffffff'
 
@@ -87,6 +87,6 @@ export const dark = {
     textFieldBorder: GRAY7,
     textFieldActivatedBorder: GRAY6,
     tableBackground: "#292e33",
-    title: WHITE
+    title: GREEN1
   },
 }
