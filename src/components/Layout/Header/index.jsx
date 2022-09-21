@@ -19,7 +19,8 @@ const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  min-width: 320px;
   background-color: ${props => props.theme.colors.headerBackground};
   box-shadow: 0 0 8px ${props => props.theme.colors.headerShadow};
   backdrop-filter: blur(5px);
@@ -44,9 +45,13 @@ const BlogTitle = styled.div`
   font-size: 28px;
   color: ${props => props.theme.colors.title};
 
-  & > a {
+  > a {
     text-decoration: none;
     color: inherit;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
   }
 `
 
@@ -54,28 +59,35 @@ const Menu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 15px;
 
-  & svg {
+  a {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 24px;
+  }
+  svg {
     width: 20px;
     height: 20px;
-    margin-right: 15px;
     cursor: pointer;
   }
-
-  & svg path {
+  svg path {
     fill: ${props => props.theme.colors.icon};
     transition: fill 0.3s;
   }
-
-  & svg:hover path {
+  svg:hover path {
     fill: ${props => props.theme.colors.text};
+  }
+
+  @media (max-width: 768px) {
+    column-gap: 10px;
   }
 `
 
 const ToggleWrapper = styled.div`
   width: 20px;
   height: 24px;
-  margin-right: 15px;
   overflow: hidden;
   box-sizing: border-box;
 `
@@ -89,15 +101,15 @@ const IconRail = styled.div`
   top: ${props => (props.theme.name === "light" ? "-19px" : "0px")};
   transition: top 0.4s;
 
-  & > svg {
+  svg {
     transition: opacity 0.25s;
   }
 
-  & > svg:first-child {
+  svg:first-child {
     opacity: ${props => (props.theme.name === "light" ? 0 : 1)};
   }
 
-  & > svg:last-child {
+  svg:last-child {
     opacity: ${props => (props.theme.name === "dark" ? 0 : 1)};
   }
 `

@@ -15,6 +15,7 @@ import Footer from "./Footer"
 const Wrapper = styled.div`
   box-sizing: border-box;
   position: relative;
+  min-width: 320px;
   min-height: 100vh;
   padding-top: ${props => props.headerHeight}px;
   padding-bottom: ${props => props.footerHeight}px;

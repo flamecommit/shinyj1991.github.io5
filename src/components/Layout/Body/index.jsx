@@ -4,7 +4,7 @@ import styled from "styled-components"
 const BodyWrapper = styled.div`
   max-width: 768px;
   margin: 0 auto;
-  padding: 50px 0 100px;
+  padding: 48px 0 96px;
 `
 
 const Body = ({ children }) => {

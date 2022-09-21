@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   h2 {
     margin-bottom: 10px;
     font-size: 16px;
+    line-height: 1.5;
   }
   picture {
     display: block;
@@ -19,11 +20,16 @@ const Wrapper = styled.div`
   img {
     width: 480px;
     max-width: 100%;
+    border: 1px solid #000;
   }
   .type-2 {
     @media (max-width: 768px) {
       content: url(${require('./mobile.jpg')});
     }
+  }
+
+  @media (max-width: 768px) {
+    padding-inline: 15px;
   }
 `
 
