@@ -27,13 +27,7 @@ const FooterWrapper = styled.footer`
 const Footer = ({ height }) => {
   return (
     <FooterWrapper height={height}>
-      <div className="inner">
-        © {title}, Built with Gatsby and
-        <a href="https://github.com/devHudi/gatsby-starter-hoodie" target="blank">
-          gatsby-starter-hoodie
-        </a>
-        theme.
-      </div>
+      <div className="copyright">&copy; 2022. {title} all rights reserved.</div>
     </FooterWrapper>
   )
 }
