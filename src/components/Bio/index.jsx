@@ -17,6 +17,7 @@ import { siteUrl, description, author, links } from "../../../blog-config"
 const BioWrapper = styled.div`
   display: flex;
   align-items: center;
+  column-gap: 16px;
 
   @media (max-width: 768px) {
     padding-inline: 15px;
@@ -27,7 +28,6 @@ const profileImageRoot = typeof window !== "undefined" && window.location.host =
 
 const Profile = styled.div`
   flex: 0 0 auto;
-  margin-right: 16px;
   width: 128px;
   height: 128px;
   border-radius: 50%;
@@ -49,22 +49,21 @@ const Description = styled.div`
 `
 
 const LinksWrapper = styled.div`
-  & a {
-    margin-right: 9.6px;
-  }
+  display: flex;
+  column-gap: 9.6px;
 
-  & svg {
+  svg {
     width: 25.6px;
     height: 25.6px;
     cursor: pointer;
+
+    path {
+      fill: ${props => props.theme.colors.icon};
+      transition: fill 0.3s;
+    }
   }
 
-  & svg path {
-    fill: ${props => props.theme.colors.icon};
-    transition: fill 0.3s;
-  }
-
-  & a:hover svg path {
+  a:hover svg path {
     fill: ${props => props.theme.colors.text};
   }
 `

@@ -21,12 +21,17 @@ const FooterWrapper = styled.footer`
     margin: 0 0.3em;
     color: ${props => props.theme.colors.text};
   }
+  abbr {
+    text-decoration: none;
+  }
 `
 
 const Footer = ({ height }) => {
   return (
     <FooterWrapper height={height}>
-      <div className="copyright">&copy; 2022. {title} all rights reserved.</div>
+      <div className="copyright">
+        &copy; 2022. {title} all rights reserved.
+      </div>
     </FooterWrapper>
   )
 }

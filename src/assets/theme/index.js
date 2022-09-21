@@ -11,8 +11,6 @@ const GRAY0 = "#f8f9fa"
 
 const GREEN1 = '#71ac42'
 
-const WHITE = '#ffffff'
-
 export const light = {
   name: "light",
   colors: {
