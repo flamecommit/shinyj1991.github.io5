@@ -12,7 +12,6 @@ import Layout from "components/Layout"
 import Title from "components/Title"
 import TagList from "components/TagList"
 import PostList from "components/PostList"
-import VerticleSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
 
@@ -81,8 +80,6 @@ const TagsPage = ({ data }) => {
           }}
         />
       </TagListWrapper>
-
-      <VerticleSpace size={32} />
 
       <PostList postList={filteredPosts} />
     </Layout>

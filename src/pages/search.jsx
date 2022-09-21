@@ -7,12 +7,13 @@ import Layout from "components/Layout"
 import PostList from "components/PostList"
 import TextField from "components/TextField"
 import Title from "components/Title"
-import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
 
 const SearchWrapper = styled.div`
   margin-top: 20px;
+  margin-bottom: 70px;
+
   @media (max-width: 768px) {
     padding: 0 15px;
   }
@@ -49,7 +50,6 @@ const Search = ({ data }) => {
           placeholder="Search"
         />
       </SearchWrapper>
-      <VerticalSpace size={70} />
       <PostList postList={filteredPosts} />
     </Layout>
   )
