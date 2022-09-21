@@ -29,14 +29,13 @@ const TocWrapper = styled.div`
     ::-webkit-scrollbar-track {
       background: ${props => props.theme.colors.scrollTrack};
     }
-
     ::-webkit-scrollbar-thumb {
       background: ${props => props.theme.colors.scrollHandle};
     }
   }
 
   @media (max-width: 1300px) {
-    display: None;
+    display: none;
   }
 `
 
