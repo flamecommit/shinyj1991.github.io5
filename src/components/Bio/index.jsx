@@ -33,10 +33,8 @@ const Profile = styled.div`
   margin-right: 16px;
   width: 128px;
   height: 128px;
-  border-radius: 999px;
-  background-image: url(${profileImageRoot}/profile.jpg);
-  background-size: cover;
-  background-position: center;
+  border-radius: 50%;
+  background: #f7f7f7 url(${profileImageRoot}/profile.jpg) center center / cover no-repeat;
 `
 
 const Author = styled.div`
