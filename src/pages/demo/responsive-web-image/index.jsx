@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: grid;
   row-gap: 50px;
   padding-block: 30px;
-  color: #fff;
+  color: ${props => props.theme.colors.text};
 
   h2 {
     margin-bottom: 10px;
