@@ -25,14 +25,14 @@ const PostWrapper = styled.div`
 `
 
 const Date = styled.p`
-  margin-bottom: 16px;
-  font-size: 14.4px;
+  margin-bottom: 15px;
+  font-size: 14px;
   color: ${props => props.theme.colors.tertiaryText};
 `
 
 const Excerpt = styled.p`
   margin-bottom: 32px;
-  line-height: 1.7;
+  line-height: 1.6;
   max-height: 3.4em;
   font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};

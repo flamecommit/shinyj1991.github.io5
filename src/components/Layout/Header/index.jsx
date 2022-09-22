@@ -87,7 +87,7 @@ const Menu = styled.div`
 
 const ToggleWrapper = styled.div`
   width: 20px;
-  height: 24px;
+  height: 20px;
   overflow: hidden;
   box-sizing: border-box;
 `
@@ -98,7 +98,7 @@ const IconRail = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 40px;
-  top: ${props => (props.theme.name === "light" ? "-19px" : "0px")};
+  top: ${props => (props.theme.name === "light" ? "-20px" : "0px")};
   transition: top 0.4s;
 
   svg {

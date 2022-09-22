@@ -6,7 +6,7 @@ update: 2022-09-22
 tags:
   - Javascript
   - Lodash
-# series: "Lodash Array Methods"
+series: "Lodash Array Methods"
 ---
 
 ## _.chunk
@@ -48,11 +48,11 @@ _.compact([0, 1, false, 2, '', 3]);
 
 ## _.concat
 
-추가 배열 또는 값을 연결하는 새 배열을 반환합니다.
+대상 배열에 배열 또는 값을 연결하여 새 배열을 반환합니다.
 
 ***Arguments***<br>
-\- array (Array): 연결할 배열<br>
-\- [values] (...*): 연결할 값
+\- array (Array): 대상 배열<br>
+\- [values] (...*): 연결할 배열 또는 값
 
 ***Returns***<br>
 \- (Array): 연결된 새 배열

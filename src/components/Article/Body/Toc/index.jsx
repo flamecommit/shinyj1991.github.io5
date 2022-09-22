@@ -13,7 +13,7 @@ const TocWrapper = styled.div`
   left: 100%;
   height: 100%;
 
-  & > div {
+  > div {
     position: sticky;
     top: 86px;
     padding-right: 20px;
