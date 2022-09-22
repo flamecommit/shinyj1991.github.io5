@@ -1,8 +1,8 @@
 ---
 title: "반응형이미지를 구현하는 두가지 방법"
 description:
-date: 2022-09-22
-update: 2022-09-22
+date: 2022-09-21
+update: 2022-09-21
 tags:
   - CSS
   - html

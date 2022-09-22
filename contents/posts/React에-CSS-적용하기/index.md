@@ -1,8 +1,8 @@
 ---
 title: "React에 CSS 적용하기"
 description:
-date: 2022-09-21
-update: 2022-09-21
+date: 2022-09-20
+update: 2022-09-20
 tags:
   - React
   - CSS
