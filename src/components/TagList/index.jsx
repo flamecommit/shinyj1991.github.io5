@@ -7,7 +7,6 @@ const TagListWrapper = styled.div`
   flex-wrap: wrap;
   column-gap: 8px;
   row-gap: 8px;
-  margin-bottom: 16px;
   word-break: break-all;
 
   a {
