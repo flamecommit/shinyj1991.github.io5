@@ -5,19 +5,30 @@ import Layout from "components/Layout"
 
 import _ from "lodash"
 
-const members = [
-  {id: 1, name: '김철수',},
-  {id: 2, name: '박철수',},
-  {id: 3, name: '이철수',}
+
+
+
+
+var users = [
+  { 'user': 'barney',  'active': true },
+  { 'user': 'fred',    'active': false },
+  { 'user': 'pebbles', 'active': false }
 ];
+ 
+_.dropRightWhile(users, function(o) { return !o.active; });
 
-const a = _.differenceWith(members, [
-  {id: 1, name: '김봉남'},
-  {id: 4, name: '이철수'}
-], (a, b) => a.name === b.name);
+console.log(_.dropRightWhile(users, user => !user.active))
+ 
+// _.dropRightWhile(users, { 'user': 'pebbles', 'active': false });
+ 
+// _.dropRightWhile(users, ['active', false]);
+ 
+// _.dropRightWhile(users, 'active');
 
-console.log(a)
-// console.log(_.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor))
+
+
+
+
 
 const Wrapper = styled.div`
   display: grid;
@@ -48,7 +59,6 @@ const PageDemoLodashStudy = () => {
       <Wrapper>
         <section>
           <h2>Array</h2>
-          <h3>_.chunk</h3>
           <p></p>
         </section>
       </Wrapper>
