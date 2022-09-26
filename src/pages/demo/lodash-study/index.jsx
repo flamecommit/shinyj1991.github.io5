@@ -7,23 +7,16 @@ import _ from "lodash"
 
 
 
-
-
 var users = [
-  { 'user': 'barney',  'active': true },
+  { 'user': 'barney',  'active': false },
   { 'user': 'fred',    'active': false },
-  { 'user': 'pebbles', 'active': false }
+  { 'user': 'pebbles', 'active': true }
 ];
  
-_.dropRightWhile(users, function(o) { return !o.active; });
+const a = _.findIndex(users, o => o.user === 'barney');
 
-console.log(_.dropRightWhile(users, user => !user.active))
- 
-// _.dropRightWhile(users, { 'user': 'pebbles', 'active': false });
- 
-// _.dropRightWhile(users, ['active', false]);
- 
-// _.dropRightWhile(users, 'active');
+console.log(a);
+// => 0
 
 
 
