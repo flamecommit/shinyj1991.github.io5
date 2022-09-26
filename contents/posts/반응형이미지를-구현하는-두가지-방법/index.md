@@ -7,6 +7,7 @@ tags:
   - CSS
   - html
   - 반응형
+  - 이미지
 # series: ""
 ---
 
