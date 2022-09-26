@@ -26,7 +26,7 @@ const PostWrapper = styled.div`
 
 const Date = styled.p`
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 12px;
   color: ${props => props.theme.colors.tertiaryText};
 `
 
@@ -34,7 +34,7 @@ const Excerpt = styled.p`
   margin-bottom: 32px;
   line-height: 1.6;
   max-height: 3.4em;
-  font-size: 16px;
+  font-size: 14px;
   color: ${props => props.theme.colors.secondaryText};
   overflow: hidden;
   text-overflow: ellipsis;
