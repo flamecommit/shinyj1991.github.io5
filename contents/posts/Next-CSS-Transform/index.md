@@ -14,7 +14,7 @@ tags:
 ```scss
 // before
 div {
-  transform: scale(1.2), rotate(45deg);
+  transform: scale(1.2) rotate(45deg);
 }
 
 // after
