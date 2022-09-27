@@ -1,19 +1,19 @@
 import React from "react"
-import _ from "lodash"
+// import _ from "lodash"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import SEO from "components/SEO"
 import Bio from "components/Bio"
 import PostList from "components/PostList"
-import SideTagList from "components/SideTagList"
+// import SideTagList from "components/SideTagList"
 import Divider from "components/Divider"
 
 import { title, description, siteUrl } from "../../blog-config"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
-  const tags = _.sortBy(data.allMarkdownRemark.group, ["totalCount"]).reverse()
+  // const tags = _.sortBy(data.allMarkdownRemark.group, ["totalCount"]).reverse()
 
   if (posts.length === 0) {
     return (
@@ -30,7 +30,7 @@ const BlogIndex = ({ data }) => {
       <SEO title={title} description={description} url={siteUrl} />
       <Bio />
       <Divider />
-      <SideTagList tags={tags} postCount={posts.length} />
+      {/* <SideTagList tags={tags} postCount={posts.length} /> */}
       <PostList postList={posts} />
     </Layout>
   )
