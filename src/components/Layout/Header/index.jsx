@@ -9,7 +9,7 @@ import {
   FaSun,
   FaMoon,
   FaTags,
-  FaRss,
+  // FaRss,
   FaSearch,
   FaListUl,
 } from "react-icons/fa"
