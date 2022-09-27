@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://simplizm.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Sep 2022 08:05:19 GMT</lastBuildDate><item><title><![CDATA[Next CSS Transform]]></title><description><![CDATA[속성에 포함된 , ,  함수들이 독립적인 CSS 속성으로 분리된다고 합니다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://simplizm.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Sep 2022 08:38:21 GMT</lastBuildDate><item><title><![CDATA[Next CSS Transform]]></title><description><![CDATA[속성에 포함된 , ,  함수들이 독립적인 CSS 속성으로 분리된다고 합니다.
 각 함수들이 분리됨에 따라  을 사용한 애니메이션을 구현하기 편리해질 것으로 기대가 되네요.
 아직 10…]]></description><link>https://simplizm.xyz/Next-CSS-Transform/</link><guid isPermaLink="false">https://simplizm.xyz/Next-CSS-Transform/</guid><pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;transform&lt;/code&gt; 속성에 포함된 &lt;code class=&quot;language-text&quot;&gt;rotate&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;scale&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;translate&lt;/code&gt; 함수들이 독립적인 CSS 속성으로 분리된다고 합니다.&lt;br&gt;
 각 함수들이 분리됨에 따라 &lt;code class=&quot;language-text&quot;&gt;transition&lt;/code&gt; 을 사용한 애니메이션을 구현하기 편리해질 것으로 기대가 되네요.&lt;br&gt;
@@ -557,17 +557,20 @@ user2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;admin&lt;span
 &lt;h3&gt;Math.round (반올림)&lt;/h3&gt;
 &lt;p&gt;소수점 첫째 자리에서 반올림. &lt;code class=&quot;language-text&quot;&gt;3.1&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;3.6&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;4&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;-1.1&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;-1&lt;/code&gt;이 됩니다.&lt;/p&gt;
 &lt;h3&gt;Math.trunc (무시, Internet Explorer에서는 지원하지 않음)&lt;/h3&gt;
-&lt;p&gt;소수부를 무시. &lt;code class=&quot;language-text&quot;&gt;3.1&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;이 되고 &lt;code class=&quot;language-text&quot;&gt;-1.1&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;-1&lt;/code&gt;이 됩니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Nuxt.js] Datepicker UI 적용하기]]></title><description><![CDATA[Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라 어떤 라이브러리가 좋을지 이것저것 찾아봤습니다. 많이사용하는 라이브러리는 크게 3가지(, , ) 였는데 일단 는 JQuery…]]></description><link>https://simplizm.xyz/Nuxt-Datepicker-적용하기/</link><guid isPermaLink="false">https://simplizm.xyz/Nuxt-Datepicker-적용하기/</guid><pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라&lt;/p&gt;
-&lt;p&gt;어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.&lt;/p&gt;
-&lt;p&gt;많이사용하는 라이브러리는 크게 3가지(&lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Bootstrap&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;) 였는데&lt;/p&gt;
-&lt;p&gt;일단 &lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;는 JQuery를 사용해야하는 점에서 제외했고&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Bootstrap&lt;/code&gt;역시 사용하는 기능에비해 붙어야하는 모듈의 용량이 너무 커 제외했습니다.&lt;/p&gt;
-&lt;p&gt;아래 예제는 &lt;code class=&quot;language-text&quot;&gt;Nuxt&lt;/code&gt;프로젝트에 &lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;를 적용하는 방법입니다.&lt;/p&gt;
+&lt;p&gt;소수부를 무시. &lt;code class=&quot;language-text&quot;&gt;3.1&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt;이 되고 &lt;code class=&quot;language-text&quot;&gt;-1.1&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;-1&lt;/code&gt;이 됩니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Nuxt.js] Datepicker UI 적용하기]]></title><description><![CDATA[Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라
+어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.
+많이사용하는 라이브러리는 크게 3가지(, , ) 였는데
+일단 는 JQuery…]]></description><link>https://simplizm.xyz/Nuxt-Datepicker-적용하기/</link><guid isPermaLink="false">https://simplizm.xyz/Nuxt-Datepicker-적용하기/</guid><pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라&lt;br&gt;
+어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.&lt;br&gt;
+많이사용하는 라이브러리는 크게 3가지(&lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Bootstrap&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;) 였는데&lt;br&gt;
+일단 &lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;는 JQuery를 사용해야하는 점에서 제외했고&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;Bootstrap&lt;/code&gt;역시 사용하는 기능에비해 붙어야하는 모듈의 용량이 너무 커 제외했습니다.&lt;br&gt;
+아래 예제는 &lt;code class=&quot;language-text&quot;&gt;Nuxt&lt;/code&gt;프로젝트에 &lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;를 적용하는 방법입니다.&lt;/p&gt;
 &lt;h2&gt;설치&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install vue2-datepicker&lt;/code&gt;&lt;/p&gt;
 &lt;h2&gt;플러그인 작성&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Nuxt.js&lt;/code&gt;에서 외부 컴포넌트를 사용할땐 &lt;code class=&quot;language-text&quot;&gt;plugin&lt;/code&gt;에서 글로벌 등록을 하는게 편합니다.&lt;/p&gt;
-&lt;p&gt;그렇게 하면 페이지마다 해당 컴포넌트와 관련 style파일(css, scss)들을 등록하는 수고를 줄일 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Nuxt.js&lt;/code&gt;에서 외부 컴포넌트를 사용할땐 &lt;code class=&quot;language-text&quot;&gt;plugin&lt;/code&gt;에서 글로벌 등록을 하는게 편합니다.&lt;br&gt;
+그렇게 하면 페이지마다 해당 컴포넌트와 관련 style파일(css, scss)들을 등록하는 수고를 줄일 수 있습니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js[plugins/components.js]&quot;&gt;&lt;pre class=&quot;language-js[plugins/components.js]&quot;&gt;&lt;code class=&quot;language-js[plugins/components.js]&quot;&gt;import Vue from &amp;#39;vue&amp;#39;
 import DatePicker from &amp;#39;vue2-datepicker&amp;#39;
 import &amp;#39;vue2-datepicker/index.css&amp;#39;; // datepicker 스타일
@@ -610,5 +613,4 @@ Vue.component(&amp;#39;DatePicker&amp;#39;, DatePicker);&lt;/code&gt;&lt;/pre&gt
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;마무리&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;의 자세한 옵션들은 아래 링크에서 확인할 수 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/vue2-datepicker&quot;&gt;https://www.npmjs.com/package/vue2-datepicker&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;의 자세한 옵션들은 &lt;a href=&quot;https://www.npmjs.com/package/vue2-datepicker&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인할 수 있습니다.&lt;/p&gt;</content:encoded></item></channel></rss>
