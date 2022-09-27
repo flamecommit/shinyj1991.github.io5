@@ -21,10 +21,7 @@ const ArticleButtonContainer = styled.div`
     margin-bottom: 80px;
     padding: 0 12.8px;
     flex-direction: column;
-
-    & > div:first-child {
-      margin-bottom: 12.8px;
-    }
+    row-gap: 12.8px;
   }
 `
 

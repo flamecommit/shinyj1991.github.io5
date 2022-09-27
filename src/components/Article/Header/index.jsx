@@ -13,11 +13,16 @@ const Wrapper = styled.div`
 `
 
 const ArticleTitle = styled.h1`
-  margin-bottom: 25.6px;
+  margin-bottom: 24px;
   line-height: 1.2;
-  font-size: 44.8px;
+  font-size: 44px;
   font-weight: 700;
   color: ${props => props.theme.colors.text};
+
+  @media (max-width: 798px) {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
 `
 
 const Information = styled.div`
