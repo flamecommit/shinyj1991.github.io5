@@ -46,7 +46,9 @@ export const light = {
     textFieldBorder: GRAY4,
     textFieldActivatedBorder: GRAY5,
     tableBackground: GRAY1,
-    title: GREEN1
+    title: GREEN1,
+    link: GREEN1,
+    accentColor1: GREEN1,
   },
 }
 
@@ -85,6 +87,8 @@ export const dark = {
     textFieldBorder: GRAY7,
     textFieldActivatedBorder: GRAY6,
     tableBackground: "#292e33",
-    title: GREEN1
+    title: GREEN1,
+    link: GREEN1,
+    accentColor1: GREEN1,
   },
 }

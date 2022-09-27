@@ -15,8 +15,8 @@ const Wrapper = styled.h1`
     transition: all 0.2s;
 
     &:hover {
-      // color: ${props => props.theme.colors.secondaryText};
-      text-decoration: underline;
+      color: ${props => props.theme.colors.accentColor1};
+      // text-decoration: underline;
     }
   }
 `

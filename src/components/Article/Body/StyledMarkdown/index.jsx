@@ -218,14 +218,19 @@ const StyledMarkdown = styled.div`
     border-bottom: 1px solid ${props => props.theme.colors.border};
   }
 
-  & a {
+  a {
     padding: 1.6px 0;
-    color: ${props => props.theme.colors.text};
-  }
+    color: ${props => props.theme.colors.link};
+    text-decoration: none;
 
-  & a:hover {
-    background-color: ${props => props.theme.colors.text};
-    color: ${props => props.theme.colors.hoveredLinkText};
+    &:focus {
+      outline-offset: -2px;
+    }
+    &:hover {
+      text-decoration: underline;
+      /* background-color: ${props => props.theme.colors.text};
+      color: ${props => props.theme.colors.hoveredLinkText}; */
+    }
   }
 `
 
