@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://simplizm.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Sep 2022 05:26:22 GMT</lastBuildDate><item><title><![CDATA[Lodash Array Methods 3]]></title><description><![CDATA[_.findIndex 조건에 맞는 첫번째 요소의 index를 반환합니다. Arguments
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://simplizm.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Sep 2022 00:44:02 GMT</lastBuildDate><item><title><![CDATA[Next CSS Transform]]></title><description><![CDATA[속성에 포함된 , ,  함수들이 독립적인 CSS 속성으로 분리된다고 합니다.
+각 함수들이 분리됨에 따라  을 사용한 애니메이션을 구현하기 편리해질 것으로 기대가 되네요.
+아직 10…]]></description><link>https://simplizm.xyz/Next-CSS-Transform/</link><guid isPermaLink="false">https://simplizm.xyz/Next-CSS-Transform/</guid><pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;transform&lt;/code&gt; 속성에 포함된 &lt;code class=&quot;language-text&quot;&gt;rotate&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;scale&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;translate&lt;/code&gt; 함수들이 독립적인 CSS 속성으로 분리된다고 합니다.&lt;br&gt;
+각 함수들이 분리됨에 따라 &lt;code class=&quot;language-text&quot;&gt;transition&lt;/code&gt; 을 사용한 애니메이션을 구현하기 편리해질 것으로 기대가 되네요.&lt;br&gt;
+아직 100% 확정된 것은 아니지만 이미 주요 브라우저들에 적용되어있어 직접 테스트 해볼 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;// before
+div&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;scale&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;1.2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;45deg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;// after
+div&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;scale&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1.2&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 45deg&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Lodash Array Methods 3]]></title><description><![CDATA[_.findIndex 조건에 맞는 첫번째 요소의 index를 반환합니다. Arguments
 - array (Array): 대상 배열
 - predicate=_.identity (Function): 반복마다 호출되는 함수
 - fromIndex=…]]></description><link>https://simplizm.xyz/Lodash-Array-Methods-3/</link><guid isPermaLink="false">https://simplizm.xyz/Lodash-Array-Methods-3/</guid><pubDate>Mon, 26 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;_.findIndex&lt;/h2&gt;
