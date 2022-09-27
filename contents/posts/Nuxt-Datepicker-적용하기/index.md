@@ -9,16 +9,11 @@ tags:
 # series: ""
 ---
 
-Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라
-
-어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.
-
-많이사용하는 라이브러리는 크게 3가지(`JQuery UI`, `Bootstrap`, `Vue2-datepicker`) 였는데
-
-일단 `JQuery UI`는 JQuery를 사용해야하는 점에서 제외했고
-
-`Bootstrap`역시 사용하는 기능에비해 붙어야하는 모듈의 용량이 너무 커 제외했습니다.
-
+Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라<br>
+어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.<br>
+많이사용하는 라이브러리는 크게 3가지(`JQuery UI`, `Bootstrap`, `Vue2-datepicker`) 였는데<br>
+일단 `JQuery UI`는 JQuery를 사용해야하는 점에서 제외했고<br>
+`Bootstrap`역시 사용하는 기능에비해 붙어야하는 모듈의 용량이 너무 커 제외했습니다.<br>
 아래 예제는 `Nuxt`프로젝트에 `Vue2-datepicker`를 적용하는 방법입니다.
 
 
@@ -28,8 +23,7 @@ Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라
 
 ## 플러그인 작성
 
-`Nuxt.js`에서 외부 컴포넌트를 사용할땐 `plugin`에서 글로벌 등록을 하는게 편합니다.
-
+`Nuxt.js`에서 외부 컴포넌트를 사용할땐 `plugin`에서 글로벌 등록을 하는게 편합니다.<br>
 그렇게 하면 페이지마다 해당 컴포넌트와 관련 style파일(css, scss)들을 등록하는 수고를 줄일 수 있습니다.
 
 ```js [plugins/components.js]
@@ -86,6 +80,4 @@ export default Vue.extend({
 
 ## 마무리
 
-`Vue2-datepicker`의 자세한 옵션들은 아래 링크에서 확인할 수 있습니다.
-
-https://www.npmjs.com/package/vue2-datepicker
+`Vue2-datepicker`의 자세한 옵션들은 <a href="https://www.npmjs.com/package/vue2-datepicker" target="_blank">여기</a>에서 확인할 수 있습니다.
