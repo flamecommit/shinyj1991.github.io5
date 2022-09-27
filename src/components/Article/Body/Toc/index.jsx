@@ -7,13 +7,22 @@ import useScroll from "hooks/useScroll"
 
 import getElementOffset from "utils/getElmentOffset"
 
-const TocWrapper = styled.div`
+const TocWrapper = styled.dl`
   position: absolute;
   top: 0;
   left: 100%;
   height: 100%;
 
-  > div {
+  dt {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  dd {
     position: sticky;
     top: 86px;
     padding-right: 20px;
@@ -22,6 +31,8 @@ const TocWrapper = styled.div`
     width: 240px;
     max-height: calc(100% - 185px);
     overflow-y: auto;
+    margin-top: -5px;
+    padding-top: 5px;
 
     ::-webkit-scrollbar {
       width: 3px;
@@ -39,7 +50,10 @@ const TocWrapper = styled.div`
   }
 `
 
-const ParagraphTitle = styled.div`
+const ParagraphTitle = styled.button`
+  background: none;
+  border: none;
+  display: block;
   margin-bottom: 8px;
   padding-left: ${props => (props.subtitle ? 19.2 : 0)}px;
   font-size: 14.4px;
@@ -89,7 +103,8 @@ const Toc = ({ items }) => {
 
   return (
     <TocWrapper>
-      <div>
+      <dt>Table of contents</dt>
+      <dd>
         {items.map((item, i) => (
           <ParagraphTitle
             key={i}
@@ -100,7 +115,7 @@ const Toc = ({ items }) => {
             {item.innerText}
           </ParagraphTitle>
         ))}
-      </div>
+      </dd>
     </TocWrapper>
   )
 }

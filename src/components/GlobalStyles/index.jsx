@@ -16,6 +16,9 @@ const GlobalStyles = createGlobalStyle`
     &::after {
       box-sizing: border-box;
     }
+    &:focus {
+      outline: dashed #71ac42;
+    }
   }
 `
 

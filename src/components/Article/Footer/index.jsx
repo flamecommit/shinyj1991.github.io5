@@ -52,9 +52,10 @@ const Arrow = styled.div`
   transition: left 0.3s;
 `
 
-const ArticleButtonWrapper = styled.div`
+const ArticleButtonWrapper = styled.button`
   display: flex;
   flex-direction: column;
+  border: none;
   align-items: ${props => (props.right ? "flex-end" : "flex-start")};
   padding: 20.8px 16px;
   max-width: 250px;
