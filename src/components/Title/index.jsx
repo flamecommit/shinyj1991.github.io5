@@ -12,7 +12,7 @@ const Wrapper = styled.h1`
   > a {
     text-decoration: none;
     color: inherit;
-    transition: all 0.2s;
+    transition: color 0.2s;
 
     &:hover {
       color: ${props => props.theme.colors.accentColor1};
