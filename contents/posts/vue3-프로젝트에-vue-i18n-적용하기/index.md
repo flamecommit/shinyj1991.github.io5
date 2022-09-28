@@ -96,3 +96,14 @@ const state = reactive({
   </div>
 </template>
 ```
+
+### version
+
+```json
+{
+  "dependencies": {
+    "vue": "^3.2.37",
+    "vue-i18n": "^9.2.2",
+  }
+}
+```
