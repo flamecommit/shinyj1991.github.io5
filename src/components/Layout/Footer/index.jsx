@@ -12,17 +12,21 @@ const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border-top: 1px solid ${props => props.theme.colors.divider};
-  font-size: 11pt;
+  font-size: 12px;
+  line-height: 1.5;
   font-weight: lighter;
   color: ${props => props.theme.colors.secondaryText};
 
+  .copyright {
+    word-break: keep-all;
+  }
   a {
+    text-decoration: none;
+    display: inline-block;
     margin: 0 0.3em;
     color: ${props => props.theme.colors.text};
-  }
-  abbr {
-    text-decoration: none;
   }
 `
 
@@ -30,7 +34,7 @@ const Footer = ({ height }) => {
   return (
     <FooterWrapper height={height}>
       <div className="copyright">
-        &copy; 2022. {title} all rights reserved.
+        &copy; {title}. Built with Gatsby and gatsby-starter-hoodie theme.
       </div>
     </FooterWrapper>
   )
