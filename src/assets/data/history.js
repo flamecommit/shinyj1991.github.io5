@@ -4,7 +4,7 @@ export default [
     company: '위메이드',
     team: '웹개발팀',
     position: '과장',
-    duty: '웹서비스 구축 및 운영',
+    duty: '인하우스 웹서비스 구축 및 운영',
     skill: [
       'html',
       'scss',
@@ -17,7 +17,7 @@ export default [
     company: '뉴본홀딩스',
     team: 'IT사업부',
     position: '과장',
-    duty: '웹서비스 구축 및 운영',
+    duty: '아웃소싱 웹서비스 구축 및 운영',
     skill: [
       'html',
       'scss',
@@ -31,7 +31,7 @@ export default [
     company: '뉴리버',
     team: '웹퍼블리싱팀',
     position: '팀장',
-    duty: '웹서비스 구축 및 운영',
+    duty: '아웃소싱 웹서비스 구축 및 운영',
     skill: [
       'html',
       'css',
@@ -44,7 +44,7 @@ export default [
     company: '메가코딩',
     team: '웹퍼블리싱팀',
     position: '사원',
-    duty: '웹서비스 구축 및 운영',
+    duty: '아웃소싱 웹서비스 구축 및 운영',
     skill: [
       'html',
       'css',
