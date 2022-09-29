@@ -109,3 +109,24 @@ _.join(['a', 'b', 'c'], '~');
 _.last([1, 2, 3]);
 // => 3
 ```
+
+## _.lastIndexOf
+
+마지막 요소부터 비교한다는것을 제외하면 `_.indexOf` 와 동일합니다.
+
+***Arguments***<br>
+\- array (Array): 대상 배열<br>
+\- value (*): 검색 값<br>
+\- [fromIndex=array.length-1] (number): 검색 시작 위치
+
+***Returns***<br>
+\- (Object): 일치하는 값의 인덱스, 없을 경우 -1
+
+```js
+_.lastIndexOf([1, 2, 1, 2], 2);
+// => 3
+ 
+// Search from the `fromIndex`.
+_.lastIndexOf([1, 2, 1, 2], 2, 2);
+// => 1
+```
