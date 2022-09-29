@@ -45,7 +45,6 @@ const AboutWrapper = styled.div`
           }
           .period {
             margin-left: 5px;
-            font-size: 12px;
             color: ${props => props.theme.colors.secondaryText};
           }
         }
@@ -75,7 +74,7 @@ const AboutPage = () => {
               <li key={c.company}>
                 <div className="company">
                   <strong className="name">{c.company}</strong>
-                  <span className="period">({c.period})</span>
+                  <span className="period">{c.period}</span>
                 </div>
                 <div className="team">{c.team} - {c.position}</div>
                 <div className="duty">{c.duty}</div>
