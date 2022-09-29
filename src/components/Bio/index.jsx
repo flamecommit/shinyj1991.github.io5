@@ -1,15 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
-import {
-  FaGithub,
-  FaKaggle,
-  FaFacebook,
-  FaLinkedin,
-  FaInstagram,
-  FaLink,
-  FaEnvelope,
-} from "react-icons/fa"
+import { FaGithub, FaEnvelope } from "react-icons/fa"
 import { SiNotion } from "react-icons/si"
 
 import { siteUrl, description, author, links } from "../../../blog-config"
@@ -36,9 +29,13 @@ const Profile = styled.div`
 
 const Author = styled.div`
   margin-bottom: 4.8px;
-  font-size: 24px;
-  font-weight: 700;
-  color: ${props => props.theme.colors.text};
+
+  a {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: ${props => props.theme.colors.text};
+  }
 `
 
 const Description = styled.div`
@@ -68,49 +65,27 @@ const LinksWrapper = styled.div`
   }
 `
 
-const Link = ({ link, children }) => {
-  if (!link) return null
-  return (
-    <a href={link} target="_blank" rel="noreferrer">
-      {children}
-    </a>
-  )
-}
-
 const Bio = () => {
-  const { github, kaggle, instagram, facebook, linkedIn, email, etc, notion } = links
+  const { github, email, notion } = links
 
   return (
     <BioWrapper id="bio">
       <Profile />
       <div>
-        <Author>@{author}</Author>
+        <Author>
+          <Link to="/about">@{author}</Link>
+        </Author>
         <Description>{description}</Description>
         <LinksWrapper>
-          <Link link={github}>
+          <a href={github} target="_blank" rel="noreferrer">
             <FaGithub />
-          </Link>
-          <Link link={notion}>
+          </a>
+          <a href={notion} target="_blank" rel="noreferrer">
             <SiNotion />
-          </Link>
-          <Link link={kaggle}>
-            <FaKaggle />
-          </Link>
-          <Link link={instagram}>
-            <FaInstagram />
-          </Link>
-          <Link link={facebook}>
-            <FaFacebook />
-          </Link>
-          <Link link={linkedIn}>
-            <FaLinkedin />
-          </Link>
-          <Link link={email}>
+          </a>
+          <a href={email} target="_blank" rel="noreferrer">
             <FaEnvelope />
-          </Link>
-          <Link link={etc}>
-            <FaLink />
-          </Link>
+          </a>
         </LinksWrapper>
       </div>
     </BioWrapper>
