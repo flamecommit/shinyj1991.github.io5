@@ -77,10 +77,6 @@ const AboutPage = () => {
 
         <AboutContents>
           <section>
-            <h2>🚀 Project.</h2>
-            <a href="https://simplizm.notion.site/Project-ab5993b7b6a9403088848359cd1f0b48" target="_blank" rel="noreferrer">move to project</a>
-          </section>
-          <section>
             <h2>💼 History.</h2>
             <ol className="history">
               {history.map(c => 
@@ -107,8 +103,12 @@ const AboutPage = () => {
             </div>
           </section> */}
           <section>
+            <h2>🚀 Project.</h2>
+            <a href="https://simplizm.notion.site/Project-ab5993b7b6a9403088848359cd1f0b48" target="_blank" rel="noreferrer">move to project</a>
+          </section>
+          <section>
             <h2>Github.</h2>
-            <a href="#self">move to github</a>
+            <a href="https://github.com/shinyj1991" target="_blank" rel="noreferrer">move to github</a>
           </section>
           <section>
             <h2>Blog.</h2>

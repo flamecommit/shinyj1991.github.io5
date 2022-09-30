@@ -8,9 +8,9 @@ tags:
 # series: ""
 ---
 
-회사에서 새로 진행하는 프로젝트에 국문과 영문, 두가지 언어로 구축해야하는 이슈가 있었습니다.<br>
-`vue.js` 프로젝트에서 `vue-i18n` 이라는 모듈을 사용하면 다국어 서비스를 지원할 수 있는데요<br>
-오늘은 `vue.js (vue3)` 환경에서 `vue-i18n` 모듈을 설치부터 적용하는 법까지 정리해보았습니다.
+회사에서 신규로 진행하는 프로젝트에 다국어를 대응해 달라는 요청이 있었습니다.<br>
+`vue-i18n` 이라는 모듈을 사용하면 `vue.js` 프로젝트에 다국어 서비스를 지원할 수 있는데요<br>
+오늘은 `vue3` 환경에서 `vue-i18n` 모듈을 설치부터 적용하는 법까지 정리해보았습니다.
 
 
 ### 설치
@@ -77,7 +77,7 @@ vueApp.mount('#app')
 import { reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { t }= useI18n()
+const { t } = useI18n()
 
 const state = reactive({
   langs: ['ko', 'en']
