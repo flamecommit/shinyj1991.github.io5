@@ -23,16 +23,17 @@ const TocWrapper = styled.dl`
     line-height: 0;
   }
   dd {
+    display: grid;
+    row-gap: 8px;
     position: sticky;
+    overflow-y: auto;
     top: 86px;
-    padding-right: 20px;
-    padding-left: 16px;
-    margin-left: 48px;
     width: 240px;
     max-height: calc(100% - 185px);
-    overflow-y: auto;
-    margin-top: -5px;
-    padding-top: 5px;
+    margin-left: 48px;
+    padding-inline: 16px;
+    margin-block: -5px;
+    padding-block: 5px;
 
     ::-webkit-scrollbar {
       width: 3px;
@@ -54,9 +55,9 @@ const ParagraphTitle = styled.button`
   background: none;
   border: none;
   display: block;
-  margin-bottom: 8px;
-  padding-left: ${props => (props.subtitle ? 19.2 : 0)}px;
-  font-size: 14.4px;
+  text-align: left;
+  margin-left: ${props => (props.subtitle ? 19.2 : 0)}px;
+  font-size: 14px;
   color: ${props => props.theme.colors.mutedText};
   line-height: 1.3;
   transition: translate 200ms, color 200ms;
