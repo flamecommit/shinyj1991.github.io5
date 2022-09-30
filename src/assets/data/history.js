@@ -44,7 +44,7 @@ export default [
     company: '메가코딩',
     team: '웹퍼블리싱팀',
     position: '사원',
-    duty: '아웃소싱 웹서비스 구축 및 운영',
+    duty: '아웃소싱 웹서비스 구축',
     skill: [
       'html',
       'css',
