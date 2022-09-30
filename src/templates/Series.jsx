@@ -59,11 +59,7 @@ const Series = ({ pathContext, data }) => {
 
   return (
     <Layout>
-      <SEO
-        title={`SERIES: ${seriesName}`}
-        description={description}
-        url={siteUrl}
-      />
+      <SEO title={`SERIES: ${seriesName}`} description={description} url={siteUrl} />
 
       <Header>
         <Subtitle> SERIES </Subtitle>

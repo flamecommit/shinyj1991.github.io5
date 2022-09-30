@@ -3,13 +3,10 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
-import SEO from "components/SEO"
 import Bio from "components/Bio"
 import PostList from "components/PostList"
 // import SideTagList from "components/SideTagList"
 import Divider from "components/Divider"
-
-import { title, description, siteUrl } from "../../blog-config"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -27,7 +24,6 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={description} url={siteUrl} />
       <Bio />
       <Divider />
       {/* <SideTagList tags={tags} postCount={posts.length} /> */}

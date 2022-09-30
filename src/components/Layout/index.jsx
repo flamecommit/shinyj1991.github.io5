@@ -1,16 +1,14 @@
 import React, { useEffect } from "react"
 import styled, { ThemeProvider } from "styled-components"
-
 import { useSelector, useDispatch } from "react-redux"
 import { setLight, setDark } from "reducers/theme"
-
 import { light, dark } from "assets/theme"
-
 import GlobalStyles from "components/GlobalStyles"
-
 import Header from "./Header"
 import Body from "./Body"
 import Footer from "./Footer"
+import SEO from "components/SEO"
+import { title, description, siteUrl } from "/blog-config"
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -52,6 +50,7 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme === "light" ? light : dark}>
+      <SEO title={title} description={description} url={siteUrl} />
       <Wrapper headerHeight={headerHeight} footerHeight={footerHeight}>
         <GlobalStyles />
         <Header height={headerHeight} toggleTheme={toggleTheme} />

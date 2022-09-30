@@ -1,14 +1,11 @@
 import React, { useState, useCallback } from "react"
 import styled from "styled-components"
-import SEO from "components/SEO"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import PostList from "components/PostList"
 import TextField from "components/TextField"
 import Title from "components/Title"
-
-import { title, description, siteUrl } from "../../blog-config"
 
 const SearchWrapper = styled.div`
   margin-top: 20px;
@@ -39,7 +36,6 @@ const Search = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={description} url={siteUrl} />
       <SearchWrapper>
         <Title size="sm">
           There are {filteredPosts.length} post{filteredPosts.length > 1 && "s"}

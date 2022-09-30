@@ -1,7 +1,6 @@
 import React from "react"
 import { flow, map, groupBy, sortBy, filter, reverse } from "lodash/fp"
 import styled from "styled-components"
-import SEO from "components/SEO"
 
 import { graphql } from "gatsby"
 
@@ -9,8 +8,6 @@ import Layout from "components/Layout"
 import Title from "components/Title"
 import SeriesList from "components/SeriesList"
 import NoContent from "components/NoContent"
-
-import { title, description, siteUrl } from "../../blog-config"
 
 const TagListWrapper = styled.div`
   margin-top: 20px;
@@ -37,8 +34,6 @@ const SeriesPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={description} url={siteUrl} />
-
       <TagListWrapper>
         {series.length > 0 && (
           <Title size="sm">There are {series.length} series.</Title>

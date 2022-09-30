@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import _ from "lodash"
 import styled from "styled-components"
-import SEO from "components/SEO"
 import filter from "lodash/filter"
 
 import { graphql, navigate } from "gatsby"
@@ -12,8 +11,6 @@ import Layout from "components/Layout"
 import Title from "components/Title"
 import TagList from "components/TagList"
 import PostList from "components/PostList"
-
-import { title, description, siteUrl } from "../../blog-config"
 
 const TagListWrapper = styled.div`
   margin-bottom: 70px;
@@ -53,8 +50,6 @@ const TagsPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={description} url={siteUrl} />
-
       <TagListWrapper>
         {selected ? (
           <Title size="sm">

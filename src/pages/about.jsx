@@ -1,13 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import SEO from "components/SEO"
 import { Link } from "gatsby"
 import _ from "lodash"
 
 import Layout from "components/Layout"
 import history from "assets/data/history"
-
-import { title, description, siteUrl } from "../../blog-config"
 
 const AboutWrapper = styled.div`
   padding-bottom: 200px;
@@ -75,8 +72,6 @@ const AboutContents = styled.div`
 const AboutPage = () => {
   return (
     <Layout>
-      <SEO title={title} description={description} url={siteUrl} />
-
       <AboutWrapper>
         <AboutTitle>About YJ.</AboutTitle>
 
