@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
       box-sizing: border-box;
     }
     &:focus {
-      outline: dashed #71ac42;
+      outline: 2px dashed #71ac42;
     }
   }
 `

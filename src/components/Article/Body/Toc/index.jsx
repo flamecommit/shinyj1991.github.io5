@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 import { animateScroll } from "react-scroll"
 
@@ -59,15 +59,12 @@ const ParagraphTitle = styled.button`
   font-size: 14.4px;
   color: ${props => props.theme.colors.mutedText};
   line-height: 1.3;
-  transition: all 0.2s;
+  transition: translate 200ms, color 200ms;
 
-  ${props =>
-    props.active &&
-    css`
-      transform: translate(-11.2px, 0);
-      color: ${props => props.theme.colors.secondaryText};
-    `}
-
+  &.active {
+    translate: -11px 0;
+    color: ${props => props.theme.colors.secondaryText};
+  }
   &:hover {
     color: ${props => props.theme.colors.text};
     cursor: pointer;
@@ -109,8 +106,8 @@ const Toc = ({ items }) => {
           <ParagraphTitle
             key={i}
             subtitle={item.tagName === "H3"}
-            active={i === active}
             onClick={() => handleClickTitle(i)}
+            className={i === active && "active"}
           >
             {item.innerText}
           </ParagraphTitle>

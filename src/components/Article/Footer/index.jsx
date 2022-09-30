@@ -5,11 +5,10 @@ import styled from "styled-components"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
 import { Utterances } from "utterances-react-component"
 
-import { utterances } from "../../../../blog-config"
-import Spinner from "components/Spinner"
-
-import Divider from "components/Divider"
-import Bio from "components/Bio"
+import { utterances } from "/blog-config"
+import Spinner from "/src/components/Spinner"
+import Divider from "/src/components/Divider"
+import Bio from "/src/components/Bio"
 
 const ArticleButtonContainer = styled.div`
   display: flex;
