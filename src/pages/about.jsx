@@ -41,7 +41,7 @@ const AboutContents = styled.div`
       display: grid;
 
       li {
-        padding-block: 40px;
+        padding-block: 36px;
         padding-inline: 15px;
         font-size: 14px;
         color: ${props => props.theme.colors.secondaryText};
