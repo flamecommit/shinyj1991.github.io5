@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { navigate } from "gatsby"
 import { useSelector } from "react-redux"
-import styled, { useTheme } from "styled-components"
+import styled from "styled-components"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
 import { Utterances } from "utterances-react-component"
 
 import { utterances } from "../../../../blog-config"
-
-import MDSpinner from "react-md-spinner"
+import Spinner from "components/Spinner"
 
 import Divider from "components/Divider"
 import Bio from "components/Bio"
@@ -109,13 +108,6 @@ const CommentWrapper = styled.div`
   }
 `
 
-const SpinnerWrapper = styled.div`
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
 const HiddenWrapper = styled.div`
   height: ${props => (props.isHidden ? "0px" : "auto")};
   overflow: ${props => (props.isHidden ? "hidden" : "auto")};
@@ -134,15 +126,6 @@ const ArticleButton = ({ right, children, onClick }) => {
         </ArticleButtonTextWrapper>
       </ArrowFlexWrapper>
     </ArticleButtonWrapper>
-  )
-}
-
-const Spinner = () => {
-  const theme = useTheme()
-  return (
-    <SpinnerWrapper>
-      <MDSpinner singleColor={theme.colors.spinner} />
-    </SpinnerWrapper>
   )
 }
 

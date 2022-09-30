@@ -7,6 +7,7 @@ import { Link } from "gatsby"
 import Title from "components/Title"
 import Divider from "components/Divider"
 import TagList from "components/TagList"
+import Spinner from "components/Spinner"
 
 const PostListWrapper = styled.div`
   @media (max-width: 768px) {
@@ -53,11 +54,16 @@ const checkIsScrollAtBottom = () => {
 }
 
 const PostList = ({ postList }) => {
+  const [isLoading, setIsLoading] = useState(false)
   const [postCount, setPostCount] = useState(10)
 
   const handleMoreLoad = _.throttle(() => {
     if (checkIsScrollAtBottom() && postCount < postList.length) {
-      setTimeout(() => setPostCount(postCount + 10), 300)
+      setIsLoading(true)
+      setTimeout(() => {
+        setPostCount(postCount + 10)
+        setIsLoading(false)
+      }, 300)
     }
   }, 250)
 
@@ -97,6 +103,7 @@ const PostList = ({ postList }) => {
           </div>
         )
       })}
+      {isLoading && <Spinner />}
     </PostListWrapper>
   )
 }
