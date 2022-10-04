@@ -71,13 +71,16 @@ const Menu = styled.div`
     width: 20px;
     height: 20px;
     cursor: pointer;
-  }
-  svg path {
-    fill: ${props => props.theme.colors.icon};
-    transition: fill 0.3s;
-  }
-  svg:hover path {
-    fill: ${props => props.theme.colors.text};
+
+    path {
+      fill: ${props => props.theme.colors.icon};
+      transition: fill 0.3s;
+    }
+    &:hover {
+      path {
+        fill: ${props => props.theme.colors.text};
+      }
+    }
   }
 
   @media (max-width: 768px) {
@@ -103,14 +106,13 @@ const IconRail = styled.div`
 
   svg {
     transition: opacity 0.25s;
-  }
 
-  svg:first-child {
-    opacity: ${props => (props.theme.name === "light" ? 0 : 1)};
-  }
-
-  svg:last-child {
-    opacity: ${props => (props.theme.name === "dark" ? 0 : 1)};
+    &:first-child {
+      opacity: ${props => (props.theme.name === "light" ? 0 : 1)};
+    }
+    &:last-child {
+      opacity: ${props => (props.theme.name === "dark" ? 0 : 1)};
+    }
   }
 `
 
