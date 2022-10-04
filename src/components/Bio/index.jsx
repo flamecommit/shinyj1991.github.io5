@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 import { FaGithub, FaEnvelope } from "react-icons/fa"
-import { SiNotion } from "react-icons/si"
 
 import { siteUrl, description, author, links } from "../../../blog-config"
 
@@ -66,7 +65,7 @@ const LinksWrapper = styled.div`
 `
 
 const Bio = () => {
-  const { github, email, notion } = links
+  const { github, email } = links
 
   return (
     <BioWrapper id="bio">
@@ -80,9 +79,9 @@ const Bio = () => {
           <a href={github} target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
-          <a href={notion} target="_blank" rel="noreferrer">
+          {/* <a href={notion} target="_blank" rel="noreferrer">
             <SiNotion />
-          </a>
+          </a> */}
           <a href={email} target="_blank" rel="noreferrer">
             <FaEnvelope />
           </a>
