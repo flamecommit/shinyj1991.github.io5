@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     &::after {
       box-sizing: border-box;
     }
-    &:focus {
+    &:focus-visible {
       outline: 2px dashed #71ac42;
     }
   }
