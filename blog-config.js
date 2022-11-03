@@ -2,7 +2,7 @@ module.exports = {
   title: "SIMPLIZM",
   description: "간소한 블로그.",
   author: "shinyj1991",
-  siteUrl: "https://simplizm.xyz",
+  siteUrl: "https://shinyj1991.github.io/",
   links: {
     github: "https://github.com/shinyj1991",
     // linkedIn: "https://linkedin.com",
