@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://simplizm.xyz/sitemap/sitemap-index.xml
-Host: https://simplizm.xyz
+Sitemap: https://shinyj1991.github.io/sitemap/sitemap-index.xml
+Host: https://shinyj1991.github.io
