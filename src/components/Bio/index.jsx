@@ -16,14 +16,14 @@ const BioWrapper = styled.div`
   }
 `
 
-const profileImageRoot = typeof window !== "undefined" && window.location.host === "localhost:8000" ? "http://localhost:8000" : siteUrl
+// const profileImageRoot = typeof window !== "undefined" && window.location.host === "localhost:8000" ? "http://localhost:8000" : siteUrl
 
 const Profile = styled.div`
   flex: 0 0 auto;
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  background: #f7f7f7 url(${profileImageRoot}/profile.jpg) center center / cover no-repeat;
+  background: #f7f7f7 url(/profile.jpg) center center / cover no-repeat;
 `
 
 const Author = styled.div`
