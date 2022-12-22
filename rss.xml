@@ -1,8 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://shinyj1991.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Dec 2022 00:50:49 GMT</lastBuildDate><item><title><![CDATA[ios에서 mp4파일이 재생이 안될때]]></title><description><![CDATA[간혹 ios에서 재생이 안되는 mp4파일이 내손에 들어올 때가 있다. 같은 코드 같은 확장자(mp4)인데 어떤건 재생이 되고 어떤건 안된다면 파일의 인코딩 옵션(?)을 의심해 봐야한다. ios에서 재생이 되려면 코덱을 h264(x26…]]></description><link>https://shinyj1991.github.io/ios에서-mp4파일이-재생이-안될때/</link><guid isPermaLink="false">https://shinyj1991.github.io/ios에서-mp4파일이-재생이-안될때/</guid><pubDate>Wed, 09 Nov 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;간혹 ios에서 재생이 안되는 mp4파일이 내손에 들어올 때가 있다.&lt;/p&gt;
-&lt;p&gt;같은 코드 같은 확장자(mp4)인데 어떤건 재생이 되고 어떤건 안된다면 파일의 인코딩 옵션(?)을 의심해 봐야한다.&lt;/p&gt;
-&lt;p&gt;ios에서 재생이 되려면 코덱을 h264(x264)로 설정하고&lt;/p&gt;
-&lt;p&gt;레벨을 3.1로 설정한 후 인코딩을 해주면 재생이 잘 되는것을 확인할 수 있다.&lt;/p&gt;
-&lt;p&gt;온라인 동영상 인코딩 컨버터 : &lt;a href=&quot;https://cloudconvert.com/&quot;&gt;https://cloudconvert.com/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[vue3 본인확인서비스 붙이기]]></title><description><![CDATA[…]]></description><link>https://shinyj1991.github.io/vue3-본인확인서비스-붙이기/</link><guid isPermaLink="false">https://shinyj1991.github.io/vue3-본인확인서비스-붙이기/</guid><pubDate>Thu, 13 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번에 맡게된 프로젝트에서 중복신청 체크를 위해 본인확인서비스를 적용하게 되었습니다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of SIMPLIZM]]></title><description><![CDATA[간소한 블로그.]]></description><link>https://shinyj1991.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Dec 2022 09:29:10 GMT</lastBuildDate><item><title><![CDATA[Nuxt3 Service 배포 삽질 기록]]></title><description><![CDATA[회사에서 새로 런칭하는 게임의 티저 성격의 단일 페이지 웹을 제작하게 되었는데요 얼마전 정식 릴리즈된 Nuxt3를 사용하면서 겪었던 시행착오를 정리해 보았습니다. 기존에 사용하던 Nuxt…]]></description><link>https://shinyj1991.github.io/ios에서-mp4파일이-재생이-안될때/</link><guid isPermaLink="false">https://shinyj1991.github.io/ios에서-mp4파일이-재생이-안될때/</guid><pubDate>Thu, 22 Dec 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 새로 런칭하는 게임의 티저 성격의 단일 페이지 웹을 제작하게 되었는데요&lt;/p&gt;
+&lt;p&gt;얼마전 정식 릴리즈된 Nuxt3를 사용하면서 겪었던 시행착오를 정리해 보았습니다.&lt;/p&gt;
+&lt;p&gt;기존에 사용하던 Nuxt2 과 사용방법이 여기저기 변화했지만 공식문서에 정리가 잘 되어있어 작업자체는 크게 어렵지 않았습니다.&lt;/p&gt;
+&lt;p&gt;기억나는 변경사항으로는 &lt;code class=&quot;language-text&quot;&gt;nuxt.config.js&lt;/code&gt; 파일의 옵션에서 &lt;code class=&quot;language-text&quot;&gt;modules&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;buildModules&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;modules&lt;/code&gt;로 통합되었다는 것과&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;plugins&lt;/code&gt; 디렉토리에 있는 &lt;code class=&quot;language-text&quot;&gt;js&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;ts&lt;/code&gt; 파일을 &lt;code class=&quot;language-text&quot;&gt;nuxt.config.js&lt;/code&gt; 에서 호출하지 않아도 자동으로 실행해주는 것이었습니다.&lt;/p&gt;
+&lt;p&gt;전체적으로 Nuxt2 보다 확실히 개발 편의성이 높아졌다고 생각합니다.&lt;/p&gt;
+&lt;p&gt;여차저차 공식문서와 구글링을 통해 개발을 마무리 하고 배포 단계에 도달했습니다.&lt;/p&gt;
+&lt;p&gt;Nuxt의 번들링은 &lt;code class=&quot;language-text&quot;&gt;build&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;generate&lt;/code&gt; 두 종류가 있는데요&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;build&lt;/code&gt;는 ssr 을 포함한 정규 빌드 방식이고 &lt;code class=&quot;language-text&quot;&gt;generate&lt;/code&gt; 는 정적 웹사이트라고 보시면 됩니다.&lt;/p&gt;
+&lt;p&gt;제가 이번에 투입된 프로젝트는 별도의 http 통신이 없는 단순 정보제공 성격의 티저사이트 이기 때문에 &lt;code class=&quot;language-text&quot;&gt;generate&lt;/code&gt; 로 배포하기로 결정했습니다.&lt;/p&gt;
+&lt;p&gt;하지만 generate로 만들어진 결과물 사이트를 서버에 배포해 보니 개발환경과 미세한 차이점들이 발생했습니다. (error 페이지 렌더링 등등)&lt;/p&gt;
+&lt;p&gt;아마 모든 프레임워크가 그렇듯 Nuxt3도 처음 릴리즈(현재 버전 3.0.0)된 버전이기 때문에 이런 오류가 발생하는건 어쩔수 없다고 생각합니다. (이래서 프레임워크는 검증기간을 거친 후 실제서비스에 적용해야 합니다.)&lt;/p&gt;
+&lt;p&gt;그래서 정적웹사이트에서 정규 빌드 후 서버에서 실행시키는 방향으로 배포방식을 변경하기로 마음먹었습니다.&lt;/p&gt;
+&lt;p&gt;Nuxt3에서는 작업물을 &lt;code class=&quot;language-text&quot;&gt;build&lt;/code&gt; 한 다음에 &lt;code class=&quot;language-text&quot;&gt;node .output/server/index.mjs&lt;/code&gt; 명령어를 통해 실행시켜야 합니다.&lt;/p&gt;
+&lt;p&gt;하지만 이렇게 실행하게 되면 추후 사이트를 수정할 일이 생겨 작업 후 재배포 했을때, 배포하는 동안 서비스가 내려가는 문제가 발생합니다.&lt;/p&gt;
+&lt;p&gt;이를 방지하기 위해서 사용하는 모듈이 바로 &lt;code class=&quot;language-text&quot;&gt;pm2&lt;/code&gt;의 클러스터 모드입니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;pm2&lt;/code&gt;를 사용하기 위해선 프로젝트 root 경로에 &lt;code class=&quot;language-text&quot;&gt;ecosystem.config.js&lt;/code&gt; 파일을 생성해 주어야 하고&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ecosystem.config.js&lt;/span&gt;
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;apps&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;NightCrows&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;exec_mode&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;cluster&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;instances&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;NODE_ENV&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;prod&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;max&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./.output/server/index.mjs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;env_alpha&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token constant&quot;&gt;HOST&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0.0.0.0&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token constant&quot;&gt;PORT&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6141&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token constant&quot;&gt;NODE_ENV&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;alpha&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;서버에는 글로벌 옵션으로 pm2를 설치해 주어야 합니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;sudo npm install -g pm2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;이후의 작업은 다음에 다시 정리하도록 하겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[vue3 본인확인서비스 붙이기]]></title><description><![CDATA[…]]></description><link>https://shinyj1991.github.io/vue3-본인확인서비스-붙이기/</link><guid isPermaLink="false">https://shinyj1991.github.io/vue3-본인확인서비스-붙이기/</guid><pubDate>Thu, 13 Oct 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번에 맡게된 프로젝트에서 중복신청 체크를 위해 본인확인서비스를 적용하게 되었습니다.&lt;/p&gt;
 &lt;p&gt;그 과정과 시행착오들을 간략하게 정리해보았습니다.&lt;/p&gt;
 &lt;p&gt;철저히 프론트엔드에 관한 내용만 정리했으니 참고 부탁드립니다.&lt;/p&gt;
 &lt;p&gt;※ 한국모바일인증과 본인확인서비스 계약을 하게되면 가이드문서를 제공받을 수 있습니다.&lt;/p&gt;
@@ -973,6 +1004,62 @@ user2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;admin&lt;span
 어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.
 많이사용하는 라이브러리는 크게 3가지(, , ) 였는데
 일단 는 JQuery…]]></description><link>https://shinyj1991.github.io/Nuxt-Datepicker-적용하기/</link><guid isPermaLink="false">https://shinyj1991.github.io/Nuxt-Datepicker-적용하기/</guid><pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라&lt;br&gt;
+어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.&lt;br&gt;
+많이사용하는 라이브러리는 크게 3가지(&lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Bootstrap&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;) 였는데&lt;br&gt;
+일단 &lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;는 JQuery를 사용해야하는 점에서 제외했고&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;Bootstrap&lt;/code&gt;역시 사용하는 기능에비해 붙어야하는 모듈의 용량이 너무 커 제외했습니다.&lt;br&gt;
+아래 예제는 &lt;code class=&quot;language-text&quot;&gt;Nuxt&lt;/code&gt;프로젝트에 &lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;를 적용하는 방법입니다.&lt;/p&gt;
+&lt;h2&gt;설치&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install vue2-datepicker&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;플러그인 작성&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Nuxt.js&lt;/code&gt;에서 외부 컴포넌트를 사용할땐 &lt;code class=&quot;language-text&quot;&gt;plugin&lt;/code&gt;에서 글로벌 등록을 하는게 편합니다.&lt;br&gt;
+그렇게 하면 페이지마다 해당 컴포넌트와 관련 style파일(css, scss)들을 등록하는 수고를 줄일 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js[plugins/components.js]&quot;&gt;&lt;pre class=&quot;language-js[plugins/components.js]&quot;&gt;&lt;code class=&quot;language-js[plugins/components.js]&quot;&gt;import Vue from &amp;#39;vue&amp;#39;
+import DatePicker from &amp;#39;vue2-datepicker&amp;#39;
+import &amp;#39;vue2-datepicker/index.css&amp;#39;; // datepicker 스타일
+import &amp;#39;vue2-datepicker/locale/ko&amp;#39;; // datepicker 한글 팩
+
+// Datepicker
+Vue.component(&amp;#39;DatePicker&amp;#39;, DatePicker);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;플러그인 등록&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;nuxt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;config&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;js
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;~/plugins/components&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;페이지에 적용&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;pages/example.vue
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;template&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;date-picker&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;v-model&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;date&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;:format&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;format&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;:lang&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;lang&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;date-picker&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;template&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;span class=&quot;token language-javascript&quot;&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Vue &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vue&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; Vue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;YYYY-MM-DD&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token literal-property property&quot;&gt;days&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;일&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;월&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;화&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;수&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;목&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;금&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;토&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;마무리&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;의 자세한 옵션들은 &lt;a href=&quot;https://www.npmjs.com/package/vue2-datepicker&quot; target=&quot;_blank&quot;&gt;여기&lt;/a&gt;에서 확인할 수 있습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Nuxt.js] Datepicker UI 적용하기]]></title><description><![CDATA[Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라
+어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.
+많이사용하는 라이브러리는 크게 3가지(, , ) 였는데
+일단 는 JQuery…]]></description><link>https://shinyj1991.github.io/Nuxt3-Service-배포-삽질-기록/</link><guid isPermaLink="false">https://shinyj1991.github.io/Nuxt3-Service-배포-삽질-기록/</guid><pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Nuxt, Vue 프로젝트에 Datepicker 적용이 처음이라&lt;br&gt;
 어떤 라이브러리가 좋을지 이것저것 찾아봤습니다.&lt;br&gt;
 많이사용하는 라이브러리는 크게 3가지(&lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Bootstrap&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Vue2-datepicker&lt;/code&gt;) 였는데&lt;br&gt;
 일단 &lt;code class=&quot;language-text&quot;&gt;JQuery UI&lt;/code&gt;는 JQuery를 사용해야하는 점에서 제외했고&lt;br&gt;

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://shinyj1991.github.io/Nuxt-Datepicker-적용하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shinyj1991.github.io/Nuxt3-Service-배포-삽질-기록/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shinyj1991.github.io/Javascript-어림수-구하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shinyj1991.github.io/Javascript-nullish-병합-연산자/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shinyj1991.github.io/Javascript-옵셔널-체이닝/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -22,6 +23,6 @@
 <url> <loc>https://shinyj1991.github.io/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shinyj1991.github.io/series/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shinyj1991.github.io/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shinyj1991.github.io/demo/responsive-web-image/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shinyj1991.github.io/demo/lodash-study/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shinyj1991.github.io/demo/responsive-web-image/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

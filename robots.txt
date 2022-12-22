@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://shinyj1991.github.io/sitemap/sitemap-index.xml
+Sitemap: https://shinyj1991.github.io/sitemap-index.xml
 Host: https://shinyj1991.github.io
