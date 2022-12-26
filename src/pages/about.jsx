@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import _ from "lodash"
+import { AiFillGithub } from "react-icons/ai"
+import { IoIosRocket } from "react-icons/io"
+import { TfiWorld } from "react-icons/tfi"
 
 import Layout from "components/Layout"
 import history from "assets/data/history"
@@ -26,16 +29,24 @@ const AboutTitle = styled.h1`
 
 const AboutContents = styled.div`
   display: grid;
-  row-gap: 100px;
+  row-gap: 60px;
 
   section {
     h2 {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
       font-weight: 700;
       font-size: 24px;
       margin-bottom: 12px;
     }
     a {
+      text-decoration: none;
       color: #71ac42;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .history {
       display: grid;
@@ -103,21 +114,21 @@ const AboutPage = () => {
             </div>
           </section> */}
           <section>
-            <h2>🌎 Website.</h2>
+            <h2><TfiWorld /> Website.</h2>
             <a href="https://www.simplizm.xyz/" target="_blank" rel="noreferrer">move to website</a>
           </section>
           <section>
-            <h2>🚀 Project.</h2>
+            <h2><IoIosRocket /> Project.</h2>
             <a href="https://simplizm.notion.site/Project-ab5993b7b6a9403088848359cd1f0b48" target="_blank" rel="noreferrer">move to project</a>
           </section>
           <section>
-            <h2>Github.</h2>
+            <h2><AiFillGithub /> Github.</h2>
             <a href="https://github.com/shinyj1991" target="_blank" rel="noreferrer">move to github</a>
           </section>
-          <section>
+          {/* <section>
             <h2>Blog.</h2>
             <Link to="/">move to blog</Link>
-          </section>
+          </section> */}
         </AboutContents>
       </AboutWrapper>
     </Layout>

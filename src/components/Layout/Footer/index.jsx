@@ -34,7 +34,7 @@ const Footer = ({ height }) => {
   return (
     <FooterWrapper height={height}>
       <div className="copyright">
-        &copy; {title}. Built with Gatsby and gatsby-starter-hoodie theme.
+        &copy; SIMPLIZM. Built with Gatsby and gatsby-starter-hoodie theme.
       </div>
     </FooterWrapper>
   )
