@@ -121,7 +121,7 @@ const Header = ({ height, toggleTheme }) => {
     <HeaderWrapper>
       <Inner height={height}>
         <BlogTitle>
-          <Link to="/">{title}</Link>
+          <Link to="/">SIMPLIZM</Link>
         </BlogTitle>
         <Menu>
           <ToggleWrapper>

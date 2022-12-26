@@ -1,5 +1,5 @@
 module.exports = {
-  title: "SIMPLIZM",
+  title: "블로그 - SIMPLIZM",
   description: "간소한 블로그.",
   author: "shinyj1991",
   siteUrl: "https://shinyj1991.github.io/",

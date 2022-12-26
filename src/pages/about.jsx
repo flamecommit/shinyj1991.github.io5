@@ -76,7 +76,7 @@ const AboutPage = () => {
         <AboutTitle>About YJ.</AboutTitle>
 
         <AboutContents>
-          <section>
+          {/* <section>
             <h2>💼 History.</h2>
             <ol className="history">
               {history.map(c => 
@@ -93,7 +93,7 @@ const AboutPage = () => {
                 </li>
               )}
             </ol>
-          </section>
+          </section> */}
           {/* <section>
             <h2>Keyword.</h2>
             <div className="keyword">
@@ -102,6 +102,10 @@ const AboutPage = () => {
               <a href="#self" target="_blank" rel="noreferrer">Run</a>
             </div>
           </section> */}
+          <section>
+            <h2>🌎 Website.</h2>
+            <a href="https://www.simplizm.xyz/" target="_blank" rel="noreferrer">move to website</a>
+          </section>
           <section>
             <h2>🚀 Project.</h2>
             <a href="https://simplizm.notion.site/Project-ab5993b7b6a9403088848359cd1f0b48" target="_blank" rel="noreferrer">move to project</a>
